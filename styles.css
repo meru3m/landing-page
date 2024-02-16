@@ -178,3 +178,89 @@ a {
   color: #f9faf8;
   font-weight: 600;
 }
+
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  body {
+    padding: 0 20px; /* Adjust body padding for smaller screens */
+  }
+
+  .navbar {
+    padding: 10px 20px; /* Reduce padding in navbar */
+  }
+
+  .header-logo {
+    font-size: 32px; /* Decrease font size for smaller screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links initially */
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust position */
+    left: 0;
+    width: 100%;
+    background: #1f2937; /* Background color */
+    padding: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .hero-left,
+  .hero-right {
+    text-align: center; /* Center align hero content */
+    padding: 0 20px; /* Adjust padding */
+  }
+
+  .hero-text {
+    font-size: 14px; /* Decrease font size */
+  }
+
+  .hero-image {
+    width: 100%; /* Make image full width */
+    padding: 0; /* Remove padding */
+  }
+
+  #section-two {
+    height: auto; /* Allow content to expand */
+    padding: 50px 20px; /* Adjust padding */
+  }
+
+  .main-text {
+    font-size: 24px; /* Decrease font size */
+  }
+
+  .image-section {
+    max-width: 100%; /* Make image section full width */
+    margin: 20px auto; /* Adjust margin */
+  }
+
+  .image {
+    width: 45%; /* Adjust image width */
+    margin: 10px; /* Adjust margin */
+  }
+
+  .quotation,
+  .author {
+    padding: 0 20px; /* Adjust padding */
+  }
+
+  #cta {
+    height: auto; /* Allow content to expand */
+    padding: 50px 20px; /* Adjust padding */
+  }
+
+  .cta-text {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 30px; /* Adjust padding */
+    gap: 20px; /* Adjust gap */
+  }
+}
